@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+  targetNamespace="http://jadice.org/tools/relaxng-validator-maven-plugin/test/todo"
+  xmlns="http://jadice.org/tools/relaxng-validator-maven-plugin/test/todo">
+
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace"
+    schemaLocation="http://www.w3.org/2005/08/xml.xsd"/>
+
+  <xs:element name="todo">
+    <xs:complexType>
+      <xs:sequence minOccurs="1" maxOccurs="unbounded">
+        <xs:element name="item" type="itemType"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="itemType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute ref="xml:base"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+</xs:schema>

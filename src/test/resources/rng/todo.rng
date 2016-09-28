@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- a simple RelaxNG schema representing a ToDo list that consists of one or more items. -->
+<element name="todo" xmlns="http://relaxng.org/ns/structure/1.0"
+  ns="http://jadice.org/tools/relaxng-validator-maven-plugin/test/todo">
+  <oneOrMore>
+    <element name="item">
+
+      <optional>
+        <!-- We must allow xml:base in order to be able to use XInclude -->
+        <attribute name="xml:base"/>
+      </optional>
+
+      <text/>
+
+    </element>
+  </oneOrMore>
+</element>

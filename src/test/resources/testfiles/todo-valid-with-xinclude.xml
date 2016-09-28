@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<t:todo xmlns:t="http://jadice.org/tools/relaxng-validator-maven-plugin/test/todo"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- This file only becomes valid, according to RelaxNG, if the 
+    XInclude works, since the included file holds an <item> element. -->
+  <xi:include href="todo-inclusion.xml"/>
+</t:todo>

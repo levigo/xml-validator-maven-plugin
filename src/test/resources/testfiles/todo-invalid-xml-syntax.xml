@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<todo xmlns="http://jadice.org/tools/relaxng-validator-maven-plugin/test/todo">
+  <item>Syntax-Error: The item Tag is never closed!
+</todo>
+
