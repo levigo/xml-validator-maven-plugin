@@ -3,7 +3,7 @@
 
   <groupId>org.jadice.tools</groupId>
   <artifactId>xml-validator-maven-plugin</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.0</version>
   <packaging>maven-plugin</packaging>
 
   <name>XML Validator Maven Plugin</name>
@@ -48,6 +48,7 @@
     <connection>scm:git:git://github.com/levigo/xml-validator-maven-plugin.git</connection>
     <developerConnection>scm:git:ssh://github.com/levigo/xml-validator-maven-plugin.git</developerConnection>
     <url>http://github.com/levigo/xml-validator-maven-plugin/tree/master</url>
+    <tag>xml-validator-maven-plugin-1.0.0</tag>
   </scm>
 
   <properties>
